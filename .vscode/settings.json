@@ -1,0 +1,14 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 2,
+    "prettier.useTabs": false,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 230,
+    "prettier.trailingComma": "none"
+}
