@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-click-copy-markdown",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A vuepress plugin for Clipboard",
   "main": "index.js",
   "repository": {
