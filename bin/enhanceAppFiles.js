@@ -11,7 +11,6 @@ export default {
 
   methods: {
     initCopy() {
-      console.log(COPY_ELEM);
       setTimeout(() => {
         if (typeof COPY_ELEM === 'string') {
           document.querySelectorAll(COPY_ELEM).forEach(this.createCopyBtn);
@@ -24,15 +23,13 @@ export default {
     },
     createCopyBtn(parent) {
       if (parent.classList.contains('codecopy-enabled')) return;
-      const copyElement = document.createElement('span');
-      copyElement.className = 'code-copy';
-      copyElement.innerHTML = '复制';
-      copyElement.title = 'click to copy';
+      const copyElement = document.createElement('i');
+      copyElement.className = 'code-copy-btn';
+      copyElement.innerHTML = COPY_TITLE;
+      copyElement.title = COPY_TIPS;
       copyElement.addEventListener('click', () => {
         this.copyContToClipboard(parent.innerText);
       });
-      console.log(copyElement);
-      console.log(parent);
       parent.appendChild(copyElement);
       parent.classList.add('codecopy-enabled');
     },

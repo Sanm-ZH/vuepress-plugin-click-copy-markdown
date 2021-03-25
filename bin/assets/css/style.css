@@ -1,7 +1,53 @@
-.code-copy {
+.code-copy-btn {
   color: #aaa;
   fill: #aaa;
   font-size: 14px;
-  display: inline-block;
+  display: inline-flex;
   cursor: pointer;
+  height: 1.25rem;
+  align-items: center;
+}
+
+div[class*="language-"] pre .code-copy-btn,
+div[class*="aside-code"] aside .code-copy-btn {
+  position: absolute;
+  z-index: 1000;
+  top: 8px;
+  right: 35px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear;
+  -moz-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+
+div[class*="language-"] pre:hover .code-copy-btn,
+div[class*="aside-code"] aside:hover .code-copy-btn {
+  opacity: 1;
+}
+
+.content pre,
+.content pre[class*="language-"] {
+  overflow-y: hidden;
+}
+
+div[class*="language-"] pre,
+div[class*="language-"] pre[class*="language-"] {
+  position: relative !important;
+}
+
+div[class~="language-text"]:before {
+  content: "text";
+}
+
+div[class~="language-yml"]:before {
+  content: "yml";
+}
+
+div[class*="language-"] pre {
+  user-select: text;
+}
+
+p code {
+  user-select: all;
 }
