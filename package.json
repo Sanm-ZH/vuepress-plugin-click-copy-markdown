@@ -1,11 +1,11 @@
 {
   "name": "vuepress-plugin-click-copy-markdown",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A vuepress plugin for Clipboard",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:Sanm-ZH/vuepress-plugin-click-copy-markdown.git"
+    "url": "https://github.com/Sanm-ZH/vuepress-plugin-click-copy-markdown/releases"
   },
   "keywords": [
     "vuepress",
