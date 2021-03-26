@@ -33,7 +33,7 @@ div[class*="aside-code"] aside:hover .code-copy-btn {
 
 div[class*="language-"] pre,
 div[class*="language-"] pre[class*="language-"] {
-  position: relative !important;
+  position: static !important;
 }
 
 div[class~="language-text"]:before {
