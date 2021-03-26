@@ -2,6 +2,29 @@
 
 > A vuepress plugin for Clipboard
 
+[![npm](https://img.shields.io/npm/v/vuepress-plugin-click-copy-markdown.svg)](https://www.npmjs.com/package/vuepress-plugin-click-copy-markdown)
+[![GitHub stars](https://img.shields.io/github/stars/Sanm-ZH/vuepress-plugin-click-copy-markdown.svg)](https://github.com/Sanm-ZH/vuepress-plugin-click-copy-markdown/stargazers)
+[![GitHub license](https://img.shields.io/github/license/Sanm-ZH/vuepress-plugin-click-copy-markdown.svg)](https://github.com/Sanm-ZH/vuepress-plugin-click-copy-markdown/blob/master/LICENSE)
+
+## Install
+
+``` bash
+# install
+npm i vuepress-plugin-click-copy-markdown -D
+# or use yarn
+yarn add vuepress-plugin-click-copy-markdown -D
+```
+
+## Usage
+
+vuepress config
+
+``` javascript
+module.exports = {
+  plugins: ['one-click-copy']
+}
+```
+
 
 ## Options
 
