@@ -11,5 +11,5 @@ module.exports = (options, context) => ({
     };
   },
   name: 'vuepress-plugin-click-copy-markdown',
-  clientRootMixin: resolve(__dirname, './bin/enhanceAppFiles.js')
+  clientRootMixin: resolve(__dirname, './bin/clientRootMixin.js')
 });
