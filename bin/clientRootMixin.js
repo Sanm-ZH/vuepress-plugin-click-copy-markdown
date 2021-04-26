@@ -1,4 +1,5 @@
 import './assets/css/style.css';
+import Message from './Message';
 
 export default {
   mounted() {
@@ -50,6 +51,11 @@ export default {
       const selected = document.getSelection().rangeCount > 0 ? document.getSelection().getRangeAt(0) : false;
       el.select();
       document.execCommand('copy');
+      const message = new Message()
+      message.show({
+        text: COPY_MESSAGE,
+        wait: CLOSE_WAIT
+      })
       document.body.removeChild(el);
       if (selected) {
         document.getSelection().removeAllRanges();
