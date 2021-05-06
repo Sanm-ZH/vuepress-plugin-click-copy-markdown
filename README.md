@@ -19,9 +19,9 @@ yarn add vuepress-plugin-click-copy-markdown -D
 
 vuepress config
 
-``` javascript
+``` js
 module.exports = {
-  plugins: ['one-click-copy']
+  plugins: ['vuepress-plugin-click-copy-markdown']
 }
 ```
 
@@ -32,11 +32,13 @@ The plugin supports these configurations.
 
 ``` js
 module.exports = {
-  plugins: [require('xxx/index.js'), {
+  plugins: ['vuepress-plugin-click-copy-markdown', {
     ele: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array 
     title: 'copy',
     tips: 'click to copy',
-    showIcon: false // boolean tips: When true, the title is not an HTML tag string, and the default icon is displayed.
+    showIcon: false, // boolean tips: When true, the title is not an HTML tag string, and the default icon is displayed.
+    copyMessage: '复制成功，请粘贴后使用',
+    closeWait: 3000
   }]
 }
 ```
